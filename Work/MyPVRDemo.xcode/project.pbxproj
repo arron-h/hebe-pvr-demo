@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623EC0D0F72F000981E51 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		2D500B9A0D5A79CF00DBA0E3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D500B990D5A79CF00DBA0E3 /* QuartzCore.framework */; };
+		595DDA051287097200AC30BB /* ChurchShader.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 595DDA031287097200AC30BB /* ChurchShader.fsh */; };
+		595DDA061287097200AC30BB /* ChurchShader.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 595DDA041287097200AC30BB /* ChurchShader.vsh */; };
+		595DDA0A1287098000AC30BB /* church-lightmap.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 595DDA071287098000AC30BB /* church-lightmap.pvr */; };
+		595DDA0B1287098000AC30BB /* church.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 595DDA081287098000AC30BB /* church.pvr */; };
+		595DDA0C1287098000AC30BB /* floor-lightmap.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 595DDA091287098000AC30BB /* floor-lightmap.pvr */; };
+		595DDA18128709C100AC30BB /* ChurchShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 595DDA031287097200AC30BB /* ChurchShader.fsh */; };
+		595DDA19128709C100AC30BB /* ChurchShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 595DDA041287097200AC30BB /* ChurchShader.vsh */; };
+		59E6908012861EF400B4ADA8 /* MyPVRDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 59E6907F12861EF400B4ADA8 /* MyPVRDemo.cpp */; };
+		59E6908412861F1800B4ADA8 /* PVRShell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 59E6908112861F1800B4ADA8 /* PVRShell.cpp */; };
+		59E6908712861F3300B4ADA8 /* PVRShellOS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 59E6908512861F3300B4ADA8 /* PVRShellOS.cpp */; };
+		59E6908A12861F5000B4ADA8 /* PVRShellAPI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 59E6908812861F4F00B4ADA8 /* PVRShellAPI.cpp */; };
+		59E6908E12861F7900B4ADA8 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 59E6908C12861F7900B4ADA8 /* AppController.mm */; };
+		59E6908F12861F7900B4ADA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 59E6908D12861F7900B4ADA8 /* main.m */; };
+		59E6909312861F9200B4ADA8 /* EAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 59E6909112861F9200B4ADA8 /* EAGLView.mm */; };
+		59E690A112861FB800B4ADA8 /* BloomBlur.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 59E6909512861FB800B4ADA8 /* BloomBlur.fsh */; };
+		59E690A212861FB800B4ADA8 /* BloomBlur.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 59E6909612861FB800B4ADA8 /* BloomBlur.vsh */; };
+		59E690A512861FB800B4ADA8 /* ScreenAlignedTexture.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 59E6909912861FB800B4ADA8 /* ScreenAlignedTexture.fsh */; };
+		59E690A612861FB800B4ADA8 /* ScreenAlignedTexture.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 59E6909A12861FB800B4ADA8 /* ScreenAlignedTexture.vsh */; };
+		59E690A712861FB800B4ADA8 /* SimpleShader.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 59E6909B12861FB800B4ADA8 /* SimpleShader.fsh */; };
+		59E690A812861FB800B4ADA8 /* SimpleShader.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 59E6909C12861FB800B4ADA8 /* SimpleShader.vsh */; };
+		59E690A912861FB800B4ADA8 /* StatueBloom1.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 59E6909D12861FB800B4ADA8 /* StatueBloom1.fsh */; };
+		59E690AA12861FB800B4ADA8 /* StatueBloom1.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 59E6909E12861FB800B4ADA8 /* StatueBloom1.vsh */; };
+		59E690AB12861FB800B4ADA8 /* StatueShader.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 59E6909F12861FB800B4ADA8 /* StatueShader.fsh */; };
+		59E690AC12861FB800B4ADA8 /* StatueShader.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 59E690A012861FB800B4ADA8 /* StatueShader.vsh */; };
+		59E690B012861FD000B4ADA8 /* bloom_mapping.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 59E690AD12861FD000B4ADA8 /* bloom_mapping.pvr */; };
+		59E690B112861FD000B4ADA8 /* floor.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 59E690AE12861FD000B4ADA8 /* floor.pvr */; };
+		59E690B212861FD000B4ADA8 /* statuenormals.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 59E690AF12861FD000B4ADA8 /* statuenormals.pvr */; };
+		59E690B412861FE000B4ADA8 /* statuescene.POD in Resources */ = {isa = PBXBuildFile; fileRef = 59E690B312861FE000B4ADA8 /* statuescene.POD */; };
+		59E690DE1286233500B4ADA8 /* libOGLES2Tools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59E6907D12861EE400B4ADA8 /* libOGLES2Tools.a */; };
+		59E690F01286256100B4ADA8 /* BloomBlur.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 59E6909512861FB800B4ADA8 /* BloomBlur.fsh */; };
+		59E690F11286256100B4ADA8 /* BloomBlur.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 59E6909612861FB800B4ADA8 /* BloomBlur.vsh */; };
+		59E690F41286256100B4ADA8 /* ScreenAlignedTexture.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 59E6909912861FB800B4ADA8 /* ScreenAlignedTexture.fsh */; };
+		59E690F51286256100B4ADA8 /* ScreenAlignedTexture.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 59E6909A12861FB800B4ADA8 /* ScreenAlignedTexture.vsh */; };
+		59E690F61286256100B4ADA8 /* SimpleShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 59E6909B12861FB800B4ADA8 /* SimpleShader.fsh */; };
+		59E690F71286256100B4ADA8 /* SimpleShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 59E6909C12861FB800B4ADA8 /* SimpleShader.vsh */; };
+		59E690F81286256100B4ADA8 /* StatueBloom1.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 59E6909D12861FB800B4ADA8 /* StatueBloom1.fsh */; };
+		59E690F91286256100B4ADA8 /* StatueBloom1.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 59E6909E12861FB800B4ADA8 /* StatueBloom1.vsh */; };
+		59E690FA1286256100B4ADA8 /* StatueShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 59E6909F12861FB800B4ADA8 /* StatueShader.fsh */; };
+		59E690FB1286256100B4ADA8 /* StatueShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 59E690A012861FB800B4ADA8 /* StatueShader.vsh */; };
+		BA240AC20FEFE77A00DE852D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA240AC10FEFE77A00DE852D /* OpenGLES.framework */; };
+		F864940310F75E5100F46F54 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = F864940210F75E5100F46F54 /* Entitlements.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		59E6907C12861EE400B4ADA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59E6907512861EE400B4ADA8 /* OGLES2Tools.xcode */;
+			proxyType = 2;
+			remoteGlobalIDString = F8748A3A0FF221480052D400;
+			remoteInfo = OGLES2Tools;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1D6058910D05DD3D006BFB54 /* MyPVRDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPVRDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2D500B990D5A79CF00DBA0E3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		595DDA031287097200AC30BB /* ChurchShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = ChurchShader.fsh; path = ../../../../Projects/Visualisations/MyPVRDemo/Program/GPUPrograms/ChurchShader.fsh; sourceTree = SOURCE_ROOT; };
+		595DDA041287097200AC30BB /* ChurchShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = ChurchShader.vsh; path = ../../../../Projects/Visualisations/MyPVRDemo/Program/GPUPrograms/ChurchShader.vsh; sourceTree = SOURCE_ROOT; };
+		595DDA071287098000AC30BB /* church-lightmap.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; name = "church-lightmap.pvr"; path = "../../../../Projects/Visualisations/MyPVRDemo/Program/church-lightmap.pvr"; sourceTree = SOURCE_ROOT; };
+		595DDA081287098000AC30BB /* church.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; name = church.pvr; path = ../../../../Projects/Visualisations/MyPVRDemo/Program/church.pvr; sourceTree = SOURCE_ROOT; };
+		595DDA091287098000AC30BB /* floor-lightmap.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; name = "floor-lightmap.pvr"; path = "../../../../Projects/Visualisations/MyPVRDemo/Program/floor-lightmap.pvr"; sourceTree = SOURCE_ROOT; };
+		59E6907512861EE400B4ADA8 /* OGLES2Tools.xcode */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OGLES2Tools.xcode; path = ../../../../Projects/Visualisations/PVRSDK/PVRTools/Work/OGLES2Tools.xcode; sourceTree = SOURCE_ROOT; };
+		59E6907F12861EF400B4ADA8 /* MyPVRDemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MyPVRDemo.cpp; path = ../../../../Projects/Visualisations/MyPVRDemo/Source/MyPVRDemo.cpp; sourceTree = SOURCE_ROOT; };
+		59E6908112861F1800B4ADA8 /* PVRShell.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PVRShell.cpp; path = ../../../../Projects/Visualisations/PVRSDK/PVRShell/Source/PVRShell.cpp; sourceTree = SOURCE_ROOT; };
+		59E6908212861F1800B4ADA8 /* PVRShell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PVRShell.h; path = ../../../../Projects/Visualisations/PVRSDK/PVRShell/Source/PVRShell.h; sourceTree = SOURCE_ROOT; };
+		59E6908312861F1800B4ADA8 /* PVRShellImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PVRShellImpl.h; path = ../../../../Projects/Visualisations/PVRSDK/PVRShell/Source/PVRShellImpl.h; sourceTree = SOURCE_ROOT; };
+		59E6908512861F3300B4ADA8 /* PVRShellOS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PVRShellOS.cpp; path = ../../../../Projects/Visualisations/PVRSDK/PVRShell/Source/OS/iPhone/PVRShellOS.cpp; sourceTree = SOURCE_ROOT; };
+		59E6908612861F3300B4ADA8 /* PVRShellOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PVRShellOS.h; path = ../../../../Projects/Visualisations/PVRSDK/PVRShell/Source/OS/iPhone/PVRShellOS.h; sourceTree = SOURCE_ROOT; };
+		59E6908812861F4F00B4ADA8 /* PVRShellAPI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PVRShellAPI.cpp; path = ../../../../Projects/Visualisations/PVRSDK/PVRShell/Source/API/EAGL/PVRShellAPI.cpp; sourceTree = SOURCE_ROOT; };
+		59E6908912861F5000B4ADA8 /* PVRShellAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PVRShellAPI.h; path = ../../../../Projects/Visualisations/PVRSDK/PVRShell/Source/API/EAGL/PVRShellAPI.h; sourceTree = SOURCE_ROOT; };
+		59E6908B12861F7900B4ADA8 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = ../../../../Projects/Visualisations/PVRSDK/PVRShell/Source/OS/iPhone/AppController.h; sourceTree = SOURCE_ROOT; };
+		59E6908C12861F7900B4ADA8 /* AppController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppController.mm; path = ../../../../Projects/Visualisations/PVRSDK/PVRShell/Source/OS/iPhone/AppController.mm; sourceTree = SOURCE_ROOT; };
+		59E6908D12861F7900B4ADA8 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../../../Projects/Visualisations/PVRSDK/PVRShell/Source/OS/iPhone/main.m; sourceTree = SOURCE_ROOT; };
+		59E6909012861F9200B4ADA8 /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EAGLView.h; path = ../../../../Projects/Visualisations/PVRSDK/PVRShell/Source/API/EAGL/OpenGLSupport/EAGLView.h; sourceTree = SOURCE_ROOT; };
+		59E6909112861F9200B4ADA8 /* EAGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = EAGLView.mm; path = ../../../../Projects/Visualisations/PVRSDK/PVRShell/Source/API/EAGL/OpenGLSupport/EAGLView.mm; sourceTree = SOURCE_ROOT; };
+		59E6909212861F9200B4ADA8 /* OpenGL_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenGL_Internal.h; path = ../../../../Projects/Visualisations/PVRSDK/PVRShell/Source/API/EAGL/OpenGLSupport/OpenGL_Internal.h; sourceTree = SOURCE_ROOT; };
+		59E6909412861FA600B4ADA8 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = ../../../../Projects/Visualisations/MyPVRDemo/Source/Prefix.pch; sourceTree = SOURCE_ROOT; };
+		59E6909512861FB800B4ADA8 /* BloomBlur.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = BloomBlur.fsh; path = ../../../../Projects/Visualisations/MyPVRDemo/Program/GPUPrograms/BloomBlur.fsh; sourceTree = SOURCE_ROOT; };
+		59E6909612861FB800B4ADA8 /* BloomBlur.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = BloomBlur.vsh; path = ../../../../Projects/Visualisations/MyPVRDemo/Program/GPUPrograms/BloomBlur.vsh; sourceTree = SOURCE_ROOT; };
+		59E6909912861FB800B4ADA8 /* ScreenAlignedTexture.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = ScreenAlignedTexture.fsh; path = ../../../../Projects/Visualisations/MyPVRDemo/Program/GPUPrograms/ScreenAlignedTexture.fsh; sourceTree = SOURCE_ROOT; };
+		59E6909A12861FB800B4ADA8 /* ScreenAlignedTexture.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = ScreenAlignedTexture.vsh; path = ../../../../Projects/Visualisations/MyPVRDemo/Program/GPUPrograms/ScreenAlignedTexture.vsh; sourceTree = SOURCE_ROOT; };
+		59E6909B12861FB800B4ADA8 /* SimpleShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = SimpleShader.fsh; path = ../../../../Projects/Visualisations/MyPVRDemo/Program/GPUPrograms/SimpleShader.fsh; sourceTree = SOURCE_ROOT; };
+		59E6909C12861FB800B4ADA8 /* SimpleShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = SimpleShader.vsh; path = ../../../../Projects/Visualisations/MyPVRDemo/Program/GPUPrograms/SimpleShader.vsh; sourceTree = SOURCE_ROOT; };
+		59E6909D12861FB800B4ADA8 /* StatueBloom1.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = StatueBloom1.fsh; path = ../../../../Projects/Visualisations/MyPVRDemo/Program/GPUPrograms/StatueBloom1.fsh; sourceTree = SOURCE_ROOT; };
+		59E6909E12861FB800B4ADA8 /* StatueBloom1.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = StatueBloom1.vsh; path = ../../../../Projects/Visualisations/MyPVRDemo/Program/GPUPrograms/StatueBloom1.vsh; sourceTree = SOURCE_ROOT; };
+		59E6909F12861FB800B4ADA8 /* StatueShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = StatueShader.fsh; path = ../../../../Projects/Visualisations/MyPVRDemo/Program/GPUPrograms/StatueShader.fsh; sourceTree = SOURCE_ROOT; };
+		59E690A012861FB800B4ADA8 /* StatueShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = StatueShader.vsh; path = ../../../../Projects/Visualisations/MyPVRDemo/Program/GPUPrograms/StatueShader.vsh; sourceTree = SOURCE_ROOT; };
+		59E690AD12861FD000B4ADA8 /* bloom_mapping.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; name = bloom_mapping.pvr; path = ../../../../Projects/Visualisations/MyPVRDemo/Program/bloom_mapping.pvr; sourceTree = SOURCE_ROOT; };
+		59E690AE12861FD000B4ADA8 /* floor.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; name = floor.pvr; path = ../../../../Projects/Visualisations/MyPVRDemo/Program/floor.pvr; sourceTree = SOURCE_ROOT; };
+		59E690AF12861FD000B4ADA8 /* statuenormals.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; name = statuenormals.pvr; path = ../../../../Projects/Visualisations/MyPVRDemo/Program/statuenormals.pvr; sourceTree = SOURCE_ROOT; };
+		59E690B312861FE000B4ADA8 /* statuescene.POD */ = {isa = PBXFileReference; lastKnownFileType = file; name = statuescene.POD; path = ../../../../Projects/Visualisations/MyPVRDemo/Program/statuescene.POD; sourceTree = SOURCE_ROOT; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		BA240AC10FEFE77A00DE852D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = ../iPhoneOS3.0.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		F864940210F75E5100F46F54 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59E690DE1286233500B4ADA8 /* libOGLES2Tools.a in Frameworks */,
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				1D3623EC0D0F72F000981E51 /* CoreGraphics.framework in Frameworks */,
+				2D500B9A0D5A79CF00DBA0E3 /* QuartzCore.framework in Frameworks */,
+				BA240AC20FEFE77A00DE852D /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* MyPVRDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				59E6907512861EE400B4ADA8 /* OGLES2Tools.xcode */,
+				F85E2B260DD21E3F00CA9BEB /* PVRDemo */,
+				F8DAC1360DD2069F008D2EBD /* PVRShell */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				F8E27FF71004EDC30006BBB4 /* Shaders */,
+				F82C4A6F10298C9800FF3CC6 /* Effects */,
+				F8E27FF61004EDBD0006BBB4 /* Textures */,
+				F8E27FF51004EDB10006BBB4 /* Models */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				F864940210F75E5100F46F54 /* Entitlements.plist */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				59E6909412861FA600B4ADA8 /* Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107310486CEB800E47090 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA240AC10FEFE77A00DE852D /* OpenGLES.framework */,
+				1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */,
+				2D500B990D5A79CF00DBA0E3 /* QuartzCore.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		59E6907612861EE400B4ADA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				59E6907D12861EE400B4ADA8 /* libOGLES2Tools.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F82C4A6F10298C9800FF3CC6 /* Effects */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Effects;
+			sourceTree = "<group>";
+		};
+		F85E2B260DD21E3F00CA9BEB /* PVRDemo */ = {
+			isa = PBXGroup;
+			children = (
+				59E6907F12861EF400B4ADA8 /* MyPVRDemo.cpp */,
+			);
+			name = PVRDemo;
+			sourceTree = "<group>";
+		};
+		F85E2BCC0DD2E83000CA9BEB /* Obj-C Classes */ = {
+			isa = PBXGroup;
+			children = (
+				59E6909012861F9200B4ADA8 /* EAGLView.h */,
+				59E6909112861F9200B4ADA8 /* EAGLView.mm */,
+				59E6909212861F9200B4ADA8 /* OpenGL_Internal.h */,
+				59E6908B12861F7900B4ADA8 /* AppController.h */,
+				59E6908C12861F7900B4ADA8 /* AppController.mm */,
+				59E6908D12861F7900B4ADA8 /* main.m */,
+			);
+			name = "Obj-C Classes";
+			sourceTree = "<group>";
+		};
+		F8DAC1360DD2069F008D2EBD /* PVRShell */ = {
+			isa = PBXGroup;
+			children = (
+				59E6908812861F4F00B4ADA8 /* PVRShellAPI.cpp */,
+				59E6908912861F5000B4ADA8 /* PVRShellAPI.h */,
+				59E6908512861F3300B4ADA8 /* PVRShellOS.cpp */,
+				59E6908612861F3300B4ADA8 /* PVRShellOS.h */,
+				59E6908112861F1800B4ADA8 /* PVRShell.cpp */,
+				59E6908212861F1800B4ADA8 /* PVRShell.h */,
+				59E6908312861F1800B4ADA8 /* PVRShellImpl.h */,
+				F85E2BCC0DD2E83000CA9BEB /* Obj-C Classes */,
+			);
+			name = PVRShell;
+			sourceTree = "<group>";
+		};
+		F8E27FF51004EDB10006BBB4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				59E690B312861FE000B4ADA8 /* statuescene.POD */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		F8E27FF61004EDBD0006BBB4 /* Textures */ = {
+			isa = PBXGroup;
+			children = (
+				595DDA071287098000AC30BB /* church-lightmap.pvr */,
+				595DDA081287098000AC30BB /* church.pvr */,
+				595DDA091287098000AC30BB /* floor-lightmap.pvr */,
+				59E690AD12861FD000B4ADA8 /* bloom_mapping.pvr */,
+				59E690AE12861FD000B4ADA8 /* floor.pvr */,
+				59E690AF12861FD000B4ADA8 /* statuenormals.pvr */,
+			);
+			name = Textures;
+			sourceTree = "<group>";
+		};
+		F8E27FF71004EDC30006BBB4 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				595DDA031287097200AC30BB /* ChurchShader.fsh */,
+				595DDA041287097200AC30BB /* ChurchShader.vsh */,
+				59E6909512861FB800B4ADA8 /* BloomBlur.fsh */,
+				59E6909612861FB800B4ADA8 /* BloomBlur.vsh */,
+				59E6909912861FB800B4ADA8 /* ScreenAlignedTexture.fsh */,
+				59E6909A12861FB800B4ADA8 /* ScreenAlignedTexture.vsh */,
+				59E6909B12861FB800B4ADA8 /* SimpleShader.fsh */,
+				59E6909C12861FB800B4ADA8 /* SimpleShader.vsh */,
+				59E6909D12861FB800B4ADA8 /* StatueBloom1.fsh */,
+				59E6909E12861FB800B4ADA8 /* StatueBloom1.vsh */,
+				59E6909F12861FB800B4ADA8 /* StatueShader.fsh */,
+				59E690A012861FB800B4ADA8 /* StatueShader.vsh */,
+			);
+			name = Shaders;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* MyPVRDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "MyPVRDemo" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyPVRDemo;
+			productName = foo;
+			productReference = 1D6058910D05DD3D006BFB54 /* MyPVRDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MyPVRDemo" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 59E6907612861EE400B4ADA8 /* Products */;
+					ProjectRef = 59E6907512861EE400B4ADA8 /* OGLES2Tools.xcode */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* MyPVRDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		59E6907D12861EE400B4ADA8 /* libOGLES2Tools.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOGLES2Tools.a;
+			remoteRef = 59E6907C12861EE400B4ADA8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				595DDA18128709C100AC30BB /* ChurchShader.fsh in Resources */,
+				595DDA19128709C100AC30BB /* ChurchShader.vsh in Resources */,
+				59E690F01286256100B4ADA8 /* BloomBlur.fsh in Resources */,
+				59E690F11286256100B4ADA8 /* BloomBlur.vsh in Resources */,
+				59E690F41286256100B4ADA8 /* ScreenAlignedTexture.fsh in Resources */,
+				59E690F51286256100B4ADA8 /* ScreenAlignedTexture.vsh in Resources */,
+				59E690F61286256100B4ADA8 /* SimpleShader.fsh in Resources */,
+				59E690F71286256100B4ADA8 /* SimpleShader.vsh in Resources */,
+				59E690F81286256100B4ADA8 /* StatueBloom1.fsh in Resources */,
+				59E690F91286256100B4ADA8 /* StatueBloom1.vsh in Resources */,
+				59E690FA1286256100B4ADA8 /* StatueShader.fsh in Resources */,
+				59E690FB1286256100B4ADA8 /* StatueShader.vsh in Resources */,
+				F864940310F75E5100F46F54 /* Entitlements.plist in Resources */,
+				59E690B012861FD000B4ADA8 /* bloom_mapping.pvr in Resources */,
+				59E690B112861FD000B4ADA8 /* floor.pvr in Resources */,
+				59E690B212861FD000B4ADA8 /* statuenormals.pvr in Resources */,
+				59E690B412861FE000B4ADA8 /* statuescene.POD in Resources */,
+				595DDA0A1287098000AC30BB /* church-lightmap.pvr in Resources */,
+				595DDA0B1287098000AC30BB /* church.pvr in Resources */,
+				595DDA0C1287098000AC30BB /* floor-lightmap.pvr in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59E6908012861EF400B4ADA8 /* MyPVRDemo.cpp in Sources */,
+				59E6908412861F1800B4ADA8 /* PVRShell.cpp in Sources */,
+				59E6908712861F3300B4ADA8 /* PVRShellOS.cpp in Sources */,
+				59E6908A12861F5000B4ADA8 /* PVRShellAPI.cpp in Sources */,
+				59E6908E12861F7900B4ADA8 /* AppController.mm in Sources */,
+				59E6908F12861F7900B4ADA8 /* main.m in Sources */,
+				59E6909312861F9200B4ADA8 /* EAGLView.mm in Sources */,
+				59E690A112861FB800B4ADA8 /* BloomBlur.fsh in Sources */,
+				59E690A212861FB800B4ADA8 /* BloomBlur.vsh in Sources */,
+				59E690A512861FB800B4ADA8 /* ScreenAlignedTexture.fsh in Sources */,
+				59E690A612861FB800B4ADA8 /* ScreenAlignedTexture.vsh in Sources */,
+				59E690A712861FB800B4ADA8 /* SimpleShader.fsh in Sources */,
+				59E690A812861FB800B4ADA8 /* SimpleShader.vsh in Sources */,
+				59E690A912861FB800B4ADA8 /* StatueBloom1.fsh in Sources */,
+				59E690AA12861FB800B4ADA8 /* StatueBloom1.vsh in Sources */,
+				59E690AB12861FB800B4ADA8 /* StatueShader.fsh in Sources */,
+				59E690AC12861FB800B4ADA8 /* StatueShader.vsh in Sources */,
+				595DDA051287097200AC30BB /* ChurchShader.fsh in Sources */,
+				595DDA061287097200AC30BB /* ChurchShader.vsh in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ../Source/Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = BUILD_OGLES2;
+				INFOPLIST_FILE = Info.plist;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ../Source/Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = BUILD_OGLES2;
+				INFOPLIST_FILE = Info.plist;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEPLOYMENT_POSTPROCESSING = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = BUILD_OGLES2;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				PRODUCT_NAME = MyPVRDemo;
+				SDKROOT = iphoneos4.1;
+				SYMROOT = "$(HOME)/Projects/TempBuildFiles/MyPVRDemo";
+				USER_HEADER_SEARCH_PATHS = "../../PVRSDK/PVRTools/Source/OGLES2 ../../PVRSDK/PVRTools/Source";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = BUILD_OGLES2;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				PRODUCT_NAME = MyPVRDemo;
+				SDKROOT = iphoneos4.1;
+				SYMROOT = "$(HOME)/Projects/TempBuildFiles/MyPVRDemo";
+				USER_HEADER_SEARCH_PATHS = "../../PVRSDK/PVRTools/Source/OGLES2 ../../PVRSDK/PVRTools/Source";
+			};
+			name = Release;
+		};
+		F864940010F75E0600F46F54 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = BUILD_OGLES2;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/c++/4.2.1/armv6-apple-darwin9";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+				USER_HEADER_SEARCH_PATHS = "../../../../../Tools/OGLES2 ../../../../../Tools";
+			};
+			name = Distribution;
+		};
+		F864940110F75E0600F46F54 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = BUILD_OGLES2;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/build/Debug-iphonesimulator\"",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				PRODUCT_NAME = OGLES2Bloom;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "../../../../../Builds/OGLES2/Include ../../../../../Tools/OGLES2";
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = Distribution;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "MyPVRDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+				F864940110F75E0600F46F54 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MyPVRDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+				F864940010F75E0600F46F54 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
